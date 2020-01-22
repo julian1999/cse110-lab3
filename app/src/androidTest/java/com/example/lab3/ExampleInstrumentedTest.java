@@ -22,6 +22,10 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getInstrumentation().getTargetContext();
 
-        assertEquals("com.example.lab3_", appContext.getPackageName());
+        assertEquals("com.example.lab3", appContext.getPackageName());
+    }
+    @Test
+    public void fakeTest(){
+        assertEquals(5, 2+2);
     }
 }
